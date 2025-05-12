@@ -9,17 +9,17 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl animate-slide-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Fight climate change with one powerful app.
+              Moins de CO₂, plus de cadeaux.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8">
-              Take action against climate change with our all-in-one platform that makes reducing your carbon footprint simple and effective.
+              Notre appli te dit comment te déplacer mieux — pour la planète, pour ton porte-monnaie… et sans prise de tête.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
-                Download App
+                Je veux tester ça 🚀
               </Button>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg rounded-full">
-                Learn More
+                En savoir plus
               </Button>
             </div>
             
@@ -39,7 +39,7 @@ const Hero = () => {
               <div className="relative bg-white p-2 rounded-3xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
                 <img 
                   src="/placeholder.svg" 
-                  alt="Klima App Screenshot" 
+                  alt="Screenshot de l'application" 
                   className="w-64 md:w-72 rounded-2xl"
                 />
               </div>

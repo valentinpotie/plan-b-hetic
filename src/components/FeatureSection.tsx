@@ -1,10 +1,11 @@
 
 import React from 'react';
+import { Activity, Calendar, FileText, Gift } from 'lucide-react';
 
 type FeatureProps = {
   title: string;
   description: string;
-  icon: string;
+  icon: React.ReactNode;
   color: string;
 };
 
@@ -12,7 +13,7 @@ const StrategyFeature = ({ title, description, icon, color }: FeatureProps) => {
   return (
     <div className="flex flex-col items-center text-center">
       <div className={`${color} w-16 h-16 rounded-full flex items-center justify-center mb-4`}>
-        <span className="text-2xl">{icon}</span>
+        {icon}
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
@@ -48,50 +49,56 @@ const AppFeature = ({ title, description, imageSrc, imageAlt, reverse = false }:
 const FeatureSection = () => {
   const strategyFeatures = [
     {
-      title: "Offset",
-      description: "Neutralize unavoidable emissions by funding climate projects.",
-      icon: "♻️",
+      title: "Analyse de tes habitudes",
+      description: "On regarde comment tu bouges aujourd'hui (promis, sans jugement)",
+      icon: <Activity size={32} className="text-green-700" />,
       color: "bg-green-100"
     },
     {
-      title: "Reduce",
-      description: "Lower your carbon footprint through simple lifestyle changes.",
-      icon: "📉",
+      title: "Recommandations malignes",
+      description: "On se branche à ton agenda et on te propose mieux : plus vert, moins cher, plus rapide",
+      icon: <Calendar size={32} className="text-blue-700" />,
       color: "bg-blue-100"
     },
     {
-      title: "Multiply",
-      description: "Increase your impact by sharing and inspiring others.",
-      icon: "🚀",
+      title: "Récap de ta semaine",
+      description: "Temps, argent, CO₂ : t'as tout le bilan… et des idées pour faire encore mieux",
+      icon: <FileText size={32} className="text-purple-700" />,
       color: "bg-purple-100"
+    },
+    {
+      title: "Récompenses",
+      description: "Des vrais cadeaux si tu fais les bons choix 💸🌱",
+      icon: <Gift size={32} className="text-amber-700" />,
+      color: "bg-amber-100"
     }
   ];
 
   const appFeatures = [
     {
-      title: "Calculate your personal carbon footprint",
-      description: "Our smart carbon calculator analyzes your lifestyle to estimate your carbon footprint, giving you a clear starting point for climate action.",
+      title: "Calcule ton empreinte carbone personnelle",
+      description: "Notre calculateur intelligent analyse ton style de vie pour estimer ton empreinte carbone, te donnant un point de départ clair pour agir pour le climat.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Carbon footprint calculator"
+      imageAlt: "Calculateur d'empreinte carbone"
     },
     {
-      title: "Offset the emissions you can't avoid",
-      description: "Support verified climate projects around the world that remove or prevent carbon emissions. Choose from forest protection, renewable energy, and more.",
+      title: "Compense les émissions que tu ne peux pas éviter",
+      description: "Soutiens des projets climatiques vérifiés qui éliminent ou préviennent les émissions de carbone. Choisis parmi la protection des forêts, les énergies renouvelables, et plus encore.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Offset projects",
+      imageAlt: "Projets de compensation",
       reverse: true
     },
     {
-      title: "Reduce your emissions step by step",
-      description: "Get personalized suggestions for reducing your carbon footprint based on your lifestyle. Track your progress and celebrate your achievements.",
+      title: "Réduis tes émissions étape par étape",
+      description: "Reçois des suggestions personnalisées pour réduire ton empreinte carbone en fonction de ton style de vie. Suis tes progrès et célèbre tes réussites.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Emission reduction"
+      imageAlt: "Réduction des émissions"
     },
     {
-      title: "Multiply your impact and spark a movement",
-      description: "Share your climate journey with friends and family. Every action inspires others, creating a ripple effect of positive change.",
+      title: "Multiplie ton impact et lance un mouvement",
+      description: "Partage ton parcours climatique avec tes amis et ta famille. Chaque action en inspire d'autres, créant un effet d'entraînement positif.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Impact multiplication",
+      imageAlt: "Multiplication de l'impact",
       reverse: true
     }
   ];
@@ -101,13 +108,13 @@ const FeatureSection = () => {
       <section id="features" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="mb-4">Your holistic climate action strategy</h2>
+            <h2 className="mb-4">Ta stratégie d'action climatique globale</h2>
             <p className="text-gray-600 text-lg">
-              A comprehensive approach to fighting climate change through three essential pillars.
+              Une approche complète pour lutter contre le changement climatique à travers quatre piliers essentiels.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {strategyFeatures.map((feature, index) => (
               <StrategyFeature key={index} {...feature} />
             ))}
@@ -118,21 +125,21 @@ const FeatureSection = () => {
       <section className="section-padding bg-secondary">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-4">Packed into a next-gen social impact app</h2>
+            <h2 className="mb-4">Emballé dans une app d'impact social nouvelle génération</h2>
             <p className="text-gray-600 text-lg">
-              Powerful features designed to make climate action accessible, engaging, and effective.
+              Des fonctionnalités puissantes conçues pour rendre l'action climatique accessible, engageante et efficace.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-2xl shadow-lg p-4 transform rotate-2 transition-transform hover:rotate-0 duration-300">
-              <img src="/placeholder.svg" alt="App Screenshot 1" className="rounded-xl" />
+              <img src="/placeholder.svg" alt="Capture d'écran 1" className="rounded-xl" />
             </div>
             <div className="bg-white rounded-2xl shadow-lg p-4 transform -rotate-2 transition-transform hover:rotate-0 duration-300 -mt-6 md:mt-4">
-              <img src="/placeholder.svg" alt="App Screenshot 2" className="rounded-xl" />
+              <img src="/placeholder.svg" alt="Capture d'écran 2" className="rounded-xl" />
             </div>
             <div className="bg-white rounded-2xl shadow-lg p-4 transform rotate-3 transition-transform hover:rotate-0 duration-300">
-              <img src="/placeholder.svg" alt="App Screenshot 3" className="rounded-xl" />
+              <img src="/placeholder.svg" alt="Capture d'écran 3" className="rounded-xl" />
             </div>
           </div>
         </div>
@@ -149,10 +156,13 @@ const FeatureSection = () => {
       <section className="section-padding bg-secondary">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="mb-4">Klima is different.</h2>
+            <h2 className="mb-4">Notre app est différente.</h2>
             <p className="text-gray-600 text-lg">
-              We're the only climate app that combines carbon offsetting, footprint reduction, and social impact in one seamless experience.
+              Nous sommes la seule application climatique qui combine la compensation carbone, la réduction de l'empreinte et l'impact social en une seule expérience fluide.
             </p>
+            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full mt-8">
+              J'embarque dans l'aventure 🌍
+            </Button>
           </div>
         </div>
       </section>

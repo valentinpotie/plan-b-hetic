@@ -6,32 +6,29 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 
 const FAQ = () => {
   const faqItems = [
     {
-      question: "What is Klima?",
-      answer: "Klima is an all-in-one climate action app that helps you offset, reduce, and multiply your impact on fighting climate change. It combines carbon footprint tracking, offsetting, and personalized suggestions in one seamless experience."
+      question: "Qu'est-ce qu'ÉcoMouv ?",
+      answer: "ÉcoMouv est une application tout-en-un d'action climatique qui t'aide à compenser, réduire et multiplier ton impact sur la lutte contre le changement climatique. Elle combine le suivi de l'empreinte carbone, la compensation et des suggestions personnalisées en une seule expérience fluide."
     },
     {
-      question: "How does carbon offsetting work?",
-      answer: "Carbon offsetting works by investing in projects that reduce or remove carbon emissions elsewhere to compensate for emissions you can't avoid. Klima connects you with verified climate projects around the world that have demonstrable carbon benefits."
+      question: "Comment fonctionne la compensation carbone ?",
+      answer: "La compensation carbone consiste à investir dans des projets qui réduisent ou éliminent les émissions de carbone ailleurs pour compenser les émissions que tu ne peux pas éviter. ÉcoMouv te met en relation avec des projets climatiques vérifiés dans le monde entier qui ont des avantages carbone démontrables."
     },
     {
-      question: "Are the climate projects verified?",
-      answer: "Yes, all climate projects available on Klima are verified by internationally recognized standards such as Gold Standard and Verified Carbon Standard (VCS). We ensure transparency by providing detailed information about each project."
+      question: "Les projets climatiques sont-ils vérifiés ?",
+      answer: "Oui, tous les projets climatiques disponibles sur ÉcoMouv sont vérifiés par des normes internationalement reconnues telles que Gold Standard et Verified Carbon Standard (VCS). Nous assurons la transparence en fournissant des informations détaillées sur chaque projet."
     },
     {
-      question: "How accurate is the carbon footprint calculator?",
-      answer: "Our carbon footprint calculator uses the latest research and methodologies to provide an accurate estimate based on your lifestyle. While no calculator can be 100% precise, it gives you a good baseline to work from and improve upon."
+      question: "Comment puis-je maximiser mon impact climatique ?",
+      answer: "Tu peux maximiser ton impact en adoptant une approche globale : compenser ce que tu ne peux pas réduire, réduire ce que tu peux, et inspirer d'autres à rejoindre ton parcours climatique. L'effet multiplicateur de l'action communautaire est l'un des outils les plus puissants que nous avons contre le changement climatique."
     },
     {
-      question: "Is my data secure?",
-      answer: "We take data privacy very seriously. Your personal information is encrypted and stored securely. We never sell your data to third parties and only use it to provide you with the best possible service."
-    },
-    {
-      question: "How can I maximize my climate impact?",
-      answer: "You can maximize your impact by taking a holistic approach: offset what you can't reduce, reduce what you can, and inspire others to join your climate journey. The multiplication effect of community action is one of the most powerful tools we have against climate change."
+      question: "Mes données sont-elles sécurisées ?",
+      answer: "Nous prenons la confidentialité des données très au sérieux. Tes informations personnelles sont cryptées et stockées en toute sécurité. Nous ne vendons jamais tes données à des tiers et ne les utilisons que pour te fournir le meilleur service possible."
     }
   ];
 
@@ -39,9 +36,9 @@ const FAQ = () => {
     <section id="faq" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="mb-4">Questions?</h2>
+          <h2 className="mb-4">Des questions ?</h2>
           <p className="text-gray-600 text-lg">
-            Find answers to common questions about Klima and climate action.
+            Trouve des réponses aux questions fréquentes sur ÉcoMouv et l'action climatique.
           </p>
         </div>
         
@@ -58,6 +55,13 @@ const FAQ = () => {
               </AccordionItem>
             ))}
           </Accordion>
+          
+          <div className="text-center mt-12">
+            <h3 className="text-xl font-semibold mb-4">Envie de voir ton impact ?</h3>
+            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
+              Je veux mes récompenses 🎁
+            </Button>
+          </div>
         </div>
       </div>
     </section>

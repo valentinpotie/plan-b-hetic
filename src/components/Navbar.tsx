@@ -28,16 +28,16 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold text-primary">Klima</a>
+          <a href="#" className="text-2xl font-bold text-primary">ÉcoMouv</a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-foreground hover:text-primary transition-colors">Features</a>
-          <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
+          <a href="#features" className="text-foreground hover:text-primary transition-colors">Fonctionnalités</a>
+          <a href="#about" className="text-foreground hover:text-primary transition-colors">À propos</a>
           <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
           <Button className="bg-primary hover:bg-primary/90 text-white">
-            Download App
+            Télécharger l'App
           </Button>
         </nav>
 
@@ -60,14 +60,14 @@ const Navbar = () => {
               className="text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Features
+              Fonctionnalités
             </a>
             <a 
               href="#about" 
               className="text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
+              À propos
             </a>
             <a 
               href="#faq" 
@@ -77,7 +77,7 @@ const Navbar = () => {
               FAQ
             </a>
             <Button className="bg-primary hover:bg-primary/90 text-white w-full">
-              Download App
+              Télécharger l'App
             </Button>
           </div>
         </div>
