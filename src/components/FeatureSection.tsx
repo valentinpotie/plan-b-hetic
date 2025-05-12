@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Activity, Calendar, FileText, Gift } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 type FeatureProps = {
   title: string;
