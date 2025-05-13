@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Activity, Calendar, Map, Gift } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 type FeatureProps = {
   title: string;
@@ -72,26 +73,26 @@ const FeatureSection = () => {
     {
       title: "Calcule l'impact carbone de tes déplacements quotidiens",
       description: "Connecte ton agenda (Google, Microsoft…) et laisse notre app analyser tes trajets pour estimer tes émissions à venir. Tu découvres concrètement l'empreinte carbone liée à ta mobilité.",
-      imageSrc: "/lovable-uploads/65be7469-cb14-41c7-9abd-fc343c29841c.png",
+      imageSrc: "/lovable-uploads/bfe212c1-8f0b-4b60-8115-3ee56ad407c9.png",
       imageAlt: "Connexion à ton agenda"
     },
     {
       title: "Reçois des suggestions de trajets plus durables",
       description: "Chaque matin, notre app te propose les meilleurs moyens de transport selon tes rendez-vous, ton rythme de vie et tes contraintes : pas de vélo si tu n'en fais jamais, pas de marche si tu es pressé·e. Tu gagnes du temps tout en réduisant ton impact.",
-      imageSrc: "/lovable-uploads/189c8f88-0fff-45ec-9ce4-e558e07e8c7d.png",
+      imageSrc: "/lovable-uploads/e9eb3631-427e-4829-81a6-951ec2dfcdd8.png",
       imageAlt: "Suggestions de trajets",
       reverse: true
     },
     {
       title: "Suis tes progrès semaine après semaine",
-      description: "Grâce à la connexion à tes apps de transport (Google Maps, etc.), tu reçois chaque fin de semaine un bilan clair de tes émissions évitées, des alternatives choisies et de ton évolution.",
-      imageSrc: "/lovable-uploads/218efdf6-9b4c-4ed8-9683-6cad664f3411.png",
+      description: "Grâce à la connexion à tes apps de transport, tu reçois chaque fin de semaine un bilan clair de tes émissions évitées, des alternatives choisies et de ton évolution.",
+      imageSrc: "/lovable-uploads/89455c3c-5a7f-46e5-b265-bd334b7eace7.png",
       imageAlt: "Suivi des progrès"
     },
     {
       title: "Sois récompensé·e pour tes efforts",
       description: "Chaque pas vers une mobilité plus responsable compte. Obtiens des bons d'achat, des réductions ou des avantages en récompense de tes choix durables.",
-      imageSrc: "/lovable-uploads/a21d8bba-0904-4492-958a-1b21faab0591.png",
+      imageSrc: "/lovable-uploads/81395873-2d41-4bc6-bce3-f210c9058661.png",
       imageAlt: "Récompenses",
       reverse: true
     }
