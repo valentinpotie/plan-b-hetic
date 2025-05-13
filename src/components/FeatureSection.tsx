@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Calendar, Map, Gift, Download } from 'lucide-react';
+import { Activity, Calendar, Map, Gift } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
@@ -20,7 +20,6 @@ const StrategyFeature = ({ title, description, icon, color }: FeatureProps) => {
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
       <Button className="mt-4 bg-primary hover:bg-primary/90">
-        <Download size={16} className="mr-2" />
         Télécharger l'app
       </Button>
     </div>
@@ -42,7 +41,6 @@ const AppFeature = ({ title, description, imageSrc, imageAlt, reverse = false }:
         <h3 className="text-2xl font-bold mb-4">{title}</h3>
         <p className="text-gray-600 leading-relaxed">{description}</p>
         <Button className="mt-6 bg-primary hover:bg-primary/90">
-          <Download size={16} className="mr-2" />
           Télécharger l'app
         </Button>
       </div>
