@@ -4,12 +4,10 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import TrustSection from '@/components/TrustSection';
 import FeatureSection from '@/components/FeatureSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
 import AboutSection from '@/components/AboutSection';
 import FAQ from '@/components/FAQ';
-import Newsletter from '@/components/Newsletter';
+import EarlyAccessForm from '@/components/EarlyAccessForm';
 import Footer from '@/components/Footer';
-import EarlyAccessSection from '@/components/EarlyAccessSection';
 
 const Index = () => {
   return (
@@ -20,10 +18,8 @@ const Index = () => {
         <TrustSection />
         <FeatureSection />
         <AboutSection />
-        <TestimonialsSection />
+        <EarlyAccessForm />
         <FAQ />
-        <EarlyAccessSection />
-        <Newsletter />
       </main>
       <Footer />
     </div>

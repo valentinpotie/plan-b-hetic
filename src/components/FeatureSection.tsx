@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Activity, Calendar, Map, Gift } from 'lucide-react';
-import { Button } from "@/components/ui/button";
 
 type FeatureProps = {
   title: string;
@@ -117,29 +116,6 @@ const FeatureSection = () => {
         </div>
       </section>
       
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-4">Vos rendez-vous ne changent pas. Vos trajets, si.</h2>
-            <p className="text-gray-600 text-lg">
-              Des fonctionnalités conçues pour rendre vos déplacements plus écologiques, sans complication.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-2xl shadow-lg p-4 transform rotate-2 transition-transform hover:rotate-0 duration-300">
-              <img src="/placeholder.svg" alt="Capture d'écran 1" className="rounded-xl" />
-            </div>
-            <div className="bg-white rounded-2xl shadow-lg p-4 transform -rotate-2 transition-transform hover:rotate-0 duration-300 -mt-6 md:mt-4">
-              <img src="/placeholder.svg" alt="Capture d'écran 2" className="rounded-xl" />
-            </div>
-            <div className="bg-white rounded-2xl shadow-lg p-4 transform rotate-3 transition-transform hover:rotate-0 duration-300">
-              <img src="/placeholder.svg" alt="Capture d'écran 3" className="rounded-xl" />
-            </div>
-          </div>
-        </div>
-      </section>
-      
       <section id="app-tour" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -153,20 +129,6 @@ const FeatureSection = () => {
             {appTourSteps.map((step, index) => (
               <AppFeature key={index} {...step} />
             ))}
-          </div>
-        </div>
-      </section>
-      
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="mb-4">Notre app est différente.</h2>
-            <p className="text-gray-600 text-lg">
-              Plan B est la seule application qui combine analyse intelligente, suggestions personnalisées et récompenses dans une expérience fluide.
-            </p>
-            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full mt-8">
-              J'embarque dans l'aventure 🌍
-            </Button>
           </div>
         </div>
       </section>
