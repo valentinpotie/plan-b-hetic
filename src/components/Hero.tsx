@@ -35,7 +35,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-secondary via-accent to-primary rounded-full blur-3xl opacity-30"></div>
               <div className="relative bg-white p-2 rounded-3xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
                 <img 
-                  src="/lovable-uploads/bc780427-d1bd-4fb7-ac15-b1c60a9e38c3.png" 
+                  src="/lovable-uploads/9b17bd2b-65cd-4b09-bed4-f5c7add0161b.png" 
                   alt="Écrans de l'application mobile" 
                   className="w-64 md:w-80 rounded-2xl"
                 />
