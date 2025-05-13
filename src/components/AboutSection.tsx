@@ -1,8 +1,20 @@
 
 import React from 'react';
 import { Users } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const AboutSection = () => {
+  // Liste des membres de l'équipe
+  const teamMembers = [
+    { name: 'Alex', image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c' },
+    { name: 'Emma', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158' },
+    { name: 'Thomas', image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952' },
+    { name: 'Julie', image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7' },
+    { name: 'Maxime', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
+    { name: 'Sarah', image: 'https://images.unsplash.com/photo-1542740348-39501cd6e2b4' },
+    { name: 'Lucas', image: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1' },
+  ];
+
   return (
     <section id="about" className="section-padding bg-primary/5">
       <div className="container-custom">
@@ -32,23 +44,21 @@ const AboutSection = () => {
                     <Users size={48} className="text-primary" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-center mb-3">Notre équipe</h3>
-                <p className="text-gray-600 text-center">
+                <h3 className="text-xl font-semibold text-center mb-4">Notre équipe</h3>
+                <p className="text-gray-600 text-center mb-6">
                   Une équipe diversifiée qui partage une passion commune pour la création d'un avenir plus durable.
                 </p>
-                <div className="grid grid-cols-2 gap-4 mt-6">
-                  <div className="bg-gray-100 rounded-lg p-2">
-                    <img src="/placeholder.svg" alt="Membre de l'équipe" className="rounded w-full aspect-square object-cover" />
-                  </div>
-                  <div className="bg-gray-100 rounded-lg p-2">
-                    <img src="/placeholder.svg" alt="Membre de l'équipe" className="rounded w-full aspect-square object-cover" />
-                  </div>
-                  <div className="bg-gray-100 rounded-lg p-2">
-                    <img src="/placeholder.svg" alt="Membre de l'équipe" className="rounded w-full aspect-square object-cover" />
-                  </div>
-                  <div className="bg-gray-100 rounded-lg p-2">
-                    <img src="/placeholder.svg" alt="Membre de l'équipe" className="rounded w-full aspect-square object-cover" />
-                  </div>
+                
+                <div className="grid grid-cols-3 gap-4 mt-6">
+                  {teamMembers.map((member, index) => (
+                    <div key={index} className="flex flex-col items-center">
+                      <Avatar className="w-16 h-16 mb-2">
+                        <AvatarImage src={member.image} alt={`Photo de ${member.name}`} className="object-cover" />
+                        <AvatarFallback>{member.name.substring(0, 2)}</AvatarFallback>
+                      </Avatar>
+                      <span className="text-sm font-medium">{member.name}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
