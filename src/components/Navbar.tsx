@@ -28,7 +28,13 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="text-2xl font-bold text-primary">Plan B</a>
+          <a href="#" className="flex items-center">
+            <img 
+              src="/lovable-uploads/529fb26d-d6b6-4619-8c77-b34a02bd9ceb.png" 
+              alt="Plan B Logo" 
+              className="h-10" 
+            />
+          </a>
         </div>
 
         {/* Desktop Navigation */}
