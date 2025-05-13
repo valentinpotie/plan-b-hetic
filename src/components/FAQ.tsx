@@ -11,32 +11,32 @@ import { Button } from "@/components/ui/button";
 const FAQ = () => {
   const faqItems = [
     {
-      question: "Comment l'application sait-elle quels transports me proposer ?",
-      answer: "Notre app se connecte à votre agenda et analyse vos rendez-vous et trajets du jour pour vous recommander des options de transport plus responsables."
+      question: "Comment l'application sait-elle quels transports te proposer ?",
+      answer: "L'app se connecte à ton agenda (Google, Microsoft…) et analyse tes rendez-vous et trajets du jour. Elle prend en compte tes habitudes, contraintes (temps, confort, sportivité…) et préférences pour te recommander des options de transport plus responsables mais réalistes pour toi."
     },
     {
-      question: "Est-ce que je dois tout changer dans ma manière de me déplacer ?",
-      answer: "Non. L'application s'adapte à votre rythme et propose des améliorations progressives."
+      question: "Est-ce que tu dois tout changer dans ta manière de te déplacer ?",
+      answer: "Non. L'app s'adapte à ton rythme et propose des améliorations progressives. Il ne s'agit pas de tout bouleverser, mais d'optimiser ce que tu fais déjà, en gardant ton confort."
     },
     {
       question: "Quels types de transports sont pris en compte ?",
-      answer: "Marche, vélo, transports en commun, covoiturage, ou trajets multimodaux."
+      answer: "On te propose des alternatives bas carbone comme la marche, le vélo, les transports en commun, le covoiturage, ou des trajets multimodaux. Les options sont filtrées selon tes besoins du jour."
     },
     {
-      question: "Est-ce que mes données sont sécurisées ?",
-      answer: "Oui. Nous collectons uniquement les données nécessaires, stockées de manière sécurisée."
+      question: "Est-ce que tes données sont sécurisées ?",
+      answer: "Oui. On ne collecte que les données nécessaires au bon fonctionnement du service, et elles sont stockées de manière sécurisée. Tu gardes à tout moment le contrôle sur ce que tu partages."
     },
     {
-      question: "Est-ce que je gagne vraiment quelque chose à utiliser l'app ?",
-      answer: "Oui. Vous gagnez du temps, réduisez votre empreinte carbone, et recevez des récompenses concrètes."
+      question: "Est-ce que tu gagnes vraiment quelque chose à utiliser l'app ?",
+      answer: "Oui. En privilégiant la mobilité douce tu réduis ton empreinte carbone, tu fais des économies, et tu reçois des récompenses concrètes (réductions, bons d'achat) si tu optes régulièrement pour des trajets plus durables."
     },
     {
       question: "Est-ce que c'est compliqué à utiliser ?",
-      answer: "Non. Une fois votre agenda connecté, l'app fonctionne en arrière-plan."
+      answer: "Non. Une fois ton agenda connecté, l'app fonctionne en arrière-plan. Tu reçois chaque matin une notification avec tes suggestions de transport. Tout est pensé pour être simple, rapide et utile."
     },
     {
-      question: "Est-ce que je peux voir mes progrès ?",
-      answer: "Oui. Chaque semaine, vous recevez un tableau de bord personnalisé."
+      question: "Est-ce que tu peux voir tes progrès ?",
+      answer: "Oui. Chaque semaine, tu reçois un tableau de bord personnalisé avec tes trajets effectués, les émissions évitées, et tes avancées. C'est motivant, concret, et visuel."
     }
   ];
 
@@ -46,7 +46,7 @@ const FAQ = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="mb-4">FAQ – Questions fréquentes</h2>
           <p className="text-gray-600 text-lg">
-            Trouve des réponses aux questions fréquentes sur DADA et ton impact environnemental.
+            Trouve des réponses aux questions fréquentes sur Plan B et ton impact environnemental.
           </p>
         </div>
         

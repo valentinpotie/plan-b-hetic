@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Activity, Calendar, FileText, Gift } from 'lucide-react';
+import { Activity, Calendar, Map, Gift } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 type FeatureProps = {
@@ -50,26 +50,20 @@ const AppFeature = ({ title, description, imageSrc, imageAlt, reverse = false }:
 const FeatureSection = () => {
   const strategyFeatures = [
     {
-      title: "Des solutions qui vous ressemblent",
-      description: "On s'adapte à votre rythme, vos contraintes et vos habitudes.",
-      icon: <Activity size={32} className="text-green-700" />,
+      title: "Ton app qui comprend tes déplacements",
+      description: "Suis automatiquement tes trajets, sans effort",
+      icon: <Map size={32} className="text-green-700" />,
       color: "bg-green-100"
     },
     {
-      title: "Connecté à votre agenda",
-      description: "On anticipe vos trajets et vous propose l'alternative la plus écolo, juste au bon moment.",
+      title: "Des recommandations de trajet plus responsable",
+      description: "Reçois des suggestions adaptées à tes déplacements",
       icon: <Calendar size={32} className="text-blue-700" />,
       color: "bg-blue-100"
     },
     {
-      title: "Suivi de vos trajets",
-      description: "On propose un bilan hebdo de vos trajets avec l'impact.",
-      icon: <FileText size={32} className="text-purple-700" />,
-      color: "bg-purple-100"
-    },
-    {
-      title: "Récompenses",
-      description: "On récompense vos efforts.",
+      title: "Des trajets qui te rapportent",
+      description: "Gagne des récompenses à chaque trajet",
       icon: <Gift size={32} className="text-amber-700" />,
       color: "bg-amber-100"
     }
@@ -77,27 +71,27 @@ const FeatureSection = () => {
 
   const appTourSteps = [
     {
-      title: "Calculez l'impact carbone de vos déplacements quotidiens",
-      description: "Connectez votre agenda (Google, Microsoft…) et laissez notre app analyser vos trajets pour estimer vos émissions à venir.",
+      title: "Calcule l'impact carbone de tes déplacements quotidiens",
+      description: "Connecte ton agenda (Google, Microsoft…) et laisse notre app analyser tes trajets pour estimer tes émissions à venir. Tu découvres concrètement l'empreinte carbone liée à ta mobilité.",
       imageSrc: "/placeholder.svg",
       imageAlt: "Calculateur d'impact carbone"
     },
     {
-      title: "Recevez des suggestions de trajets plus durables",
-      description: "Chaque matin, notre app vous propose les meilleurs moyens de transport selon vos rendez-vous, votre rythme de vie et vos contraintes.",
+      title: "Reçois des suggestions de trajets plus durables",
+      description: "Chaque matin, notre app te propose les meilleurs moyens de transport selon tes rendez-vous, ton rythme de vie et tes contraintes : pas de vélo si tu n'en fais jamais, pas de marche si tu es pressé·e. Tu gagnes du temps tout en réduisant ton impact.",
       imageSrc: "/placeholder.svg",
       imageAlt: "Suggestions de trajets",
       reverse: true
     },
     {
-      title: "Suivez vos progrès semaine après semaine",
-      description: "Grâce à la connexion à vos apps de transport, vous recevez chaque fin de semaine un bilan clair de vos émissions évitées, des alternatives choisies et de votre évolution.",
+      title: "Suis tes progrès semaine après semaine",
+      description: "Grâce à la connexion à tes apps de transport (Google Maps, etc.), tu reçois chaque fin de semaine un bilan clair de tes émissions évitées, des alternatives choisies et de ton évolution.",
       imageSrc: "/placeholder.svg",
       imageAlt: "Suivi des progrès"
     },
     {
-      title: "Soyez récompensé pour vos efforts",
-      description: "Obtenez des bons d'achat, des réductions ou des avantages en récompense de vos choix durables.",
+      title: "Sois récompensé·e pour tes efforts",
+      description: "Chaque pas vers une mobilité plus responsable compte. Obtiens des bons d'achat, des réductions ou des avantages en récompense de tes choix durables.",
       imageSrc: "/placeholder.svg",
       imageAlt: "Récompenses",
       reverse: true
@@ -115,7 +109,7 @@ const FeatureSection = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {strategyFeatures.map((feature, index) => (
               <StrategyFeature key={index} {...feature} />
             ))}
@@ -149,9 +143,9 @@ const FeatureSection = () => {
       <section id="app-tour" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-4">Planifiez votre journée, réduisez votre impact</h2>
+            <h2 className="mb-4">Planifie ta journée, réduis ton impact</h2>
             <p className="text-gray-600 text-lg">
-              Découvrez comment DADA transforme vos habitudes de déplacement, une journée à la fois.
+              Découvre comment Plan B transforme tes habitudes de déplacement, une journée à la fois.
             </p>
           </div>
           
@@ -168,7 +162,7 @@ const FeatureSection = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="mb-4">Notre app est différente.</h2>
             <p className="text-gray-600 text-lg">
-              DADA est la seule application qui combine analyse intelligente, suggestions personnalisées et récompenses dans une expérience fluide.
+              Plan B est la seule application qui combine analyse intelligente, suggestions personnalisées et récompenses dans une expérience fluide.
             </p>
             <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full mt-8">
               J'embarque dans l'aventure 🌍

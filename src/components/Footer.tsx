@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">DADA</h3>
+            <h3 className="text-xl font-bold mb-4">Plan B</h3>
             <p className="text-gray-600 mb-4">
               Ensemble pour une mobilité plus verte, un trajet à la fois.
             </p>
@@ -33,7 +33,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#features" className="text-gray-600 hover:text-primary transition-colors">Comment ça marche</a></li>
               <li><a href="#app-tour" className="text-gray-600 hover:text-primary transition-colors">Fonctionnalités</a></li>
-              <li><a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors">Témoignages</a></li>
               <li><a href="#faq" className="text-gray-600 hover:text-primary transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -61,7 +60,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-200 pt-6">
           <p className="text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} DADA. Tous droits réservés.
+            © {new Date().getFullYear()} Plan B. Tous droits réservés.
           </p>
         </div>
       </div>

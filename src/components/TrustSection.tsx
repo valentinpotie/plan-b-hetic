@@ -20,8 +20,14 @@ const TrustSection = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  // Placeholder partner logos (in a real implementation, these would be actual partner logos)
-  const partners = Array(10).fill(0).map((_, i) => `/placeholder.svg`);
+  // Partner logos
+  const partners = [
+    { name: "ADEME", logo: "/placeholder.svg" },
+    { name: "Ville de Paris", logo: "/placeholder.svg" },
+    { name: "Région Occitanie", logo: "/placeholder.svg" },
+    { name: "Région Auvergne-Rhône-Alpes", logo: "/placeholder.svg" },
+    { name: "Ministère de l'Écologie", logo: "/placeholder.svg" }
+  ];
 
   return (
     <section className="py-8 bg-white border-t border-b border-gray-100">
@@ -35,22 +41,22 @@ const TrustSection = () => {
           className="flex overflow-x-auto scrollbar-hide gap-12 py-4"
           style={{ scrollBehavior: 'smooth' }}
         >
-          {partners.map((src, idx) => (
+          {partners.map((partner, idx) => (
             <div key={idx} className="flex-shrink-0 flex items-center justify-center">
               <img 
-                src={src} 
-                alt={`Partenaire ${idx + 1}`}
+                src={partner.logo} 
+                alt={partner.name}
                 className="h-12 w-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               />
             </div>
           ))}
           
           {/* Duplicate logos for infinite scroll effect */}
-          {partners.map((src, idx) => (
+          {partners.map((partner, idx) => (
             <div key={`dup-${idx}`} className="flex-shrink-0 flex items-center justify-center">
               <img 
-                src={src} 
-                alt={`Partenaire ${idx + 1}`}
+                src={partner.logo} 
+                alt={partner.name}
                 className="h-12 w-auto grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               />
             </div>

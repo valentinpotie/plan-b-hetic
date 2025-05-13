@@ -35,7 +35,6 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-foreground hover:text-primary transition-colors">Comment ça marche ?</a>
           <a href="#about" className="text-foreground hover:text-primary transition-colors">Qui sommes-nous ?</a>
-          <a href="#testimonials" className="text-foreground hover:text-primary transition-colors">Témoignages</a>
           <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
           <Button className="bg-primary hover:bg-primary/90 text-white">
             Télécharger l'App
@@ -69,13 +68,6 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Qui sommes-nous ?
-            </a>
-            <a 
-              href="#testimonials" 
-              className="text-foreground hover:text-primary transition-colors py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Témoignages
             </a>
             <a 
               href="#faq" 

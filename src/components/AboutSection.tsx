@@ -8,12 +8,18 @@ const AboutSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-4">Qui sommes-nous ?</h2>
+            <h2 className="mb-4">Plan B, c'est qui ?</h2>
             <p className="text-gray-600 text-lg mb-6">
-              Nous sommes une équipe d'étudiants en Master Product Management à HETIC. Passionnés par la technologie, l'écologie et l'innovation, nous avons décidé de combiner ces domaines pour créer un projet qui aide les citoyens à réduire leur impact environnemental.
+              On est une team d'étudiants en Master Product Management à HETIC, avec un pied dans la tech, l'autre dans l'écologie, et la tête dans les solutions concrètes.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Avec Plan B, on veut rendre l'écologie un peu moins prise de tête, et beaucoup plus compatible avec la vraie vie.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Pas de grandes leçons, juste un coup de pouce pour mieux faire au quotidien, sans tout changer.
             </p>
             <p className="text-gray-600">
-              Notre mission est simple : rendre la transition écologique plus accessible, sans sacrifier le confort de la vie quotidienne.
+              Notre idée ? Commencer par les trajets — parce que c'est là qu'on peut avoir de l'impact, facilement, et dès maintenant.
             </p>
           </div>
           

@@ -9,6 +9,7 @@ import AboutSection from '@/components/AboutSection';
 import FAQ from '@/components/FAQ';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
+import EarlyAccessSection from '@/components/EarlyAccessSection';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
         <AboutSection />
         <TestimonialsSection />
         <FAQ />
+        <EarlyAccessSection />
         <Newsletter />
       </main>
       <Footer />
