@@ -72,26 +72,26 @@ const FeatureSection = () => {
     {
       title: "Calcule l'impact carbone de tes déplacements quotidiens",
       description: "Connecte ton agenda (Google, Microsoft…) et laisse notre app analyser tes trajets pour estimer tes émissions à venir. Tu découvres concrètement l'empreinte carbone liée à ta mobilité.",
-      imageSrc: "/placeholder.svg",
-      imageAlt: "Calculateur d'impact carbone"
+      imageSrc: "/lovable-uploads/12f1adbb-41e8-43ef-8f8d-59352d67761c.png",
+      imageAlt: "Connexion à ton agenda"
     },
     {
       title: "Reçois des suggestions de trajets plus durables",
       description: "Chaque matin, notre app te propose les meilleurs moyens de transport selon tes rendez-vous, ton rythme de vie et tes contraintes : pas de vélo si tu n'en fais jamais, pas de marche si tu es pressé·e. Tu gagnes du temps tout en réduisant ton impact.",
-      imageSrc: "/placeholder.svg",
+      imageSrc: "/lovable-uploads/93a891f2-2e76-4ba0-97b4-5cf192b94f7c.png",
       imageAlt: "Suggestions de trajets",
       reverse: true
     },
     {
       title: "Suis tes progrès semaine après semaine",
       description: "Grâce à la connexion à tes apps de transport (Google Maps, etc.), tu reçois chaque fin de semaine un bilan clair de tes émissions évitées, des alternatives choisies et de ton évolution.",
-      imageSrc: "/placeholder.svg",
+      imageSrc: "/lovable-uploads/ea5f325c-3f2c-44e7-81f8-47bb4a036197.png",
       imageAlt: "Suivi des progrès"
     },
     {
       title: "Sois récompensé·e pour tes efforts",
       description: "Chaque pas vers une mobilité plus responsable compte. Obtiens des bons d'achat, des réductions ou des avantages en récompense de tes choix durables.",
-      imageSrc: "/placeholder.svg",
+      imageSrc: "/lovable-uploads/6571a915-6ef2-4d00-ad84-6cbc5856dd07.png",
       imageAlt: "Récompenses",
       reverse: true
     }
