@@ -20,9 +20,6 @@ const Hero = () => {
                 <Download className="mr-2" size={20} />
                 Télécharger l'app
               </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg rounded-full">
-                En savoir plus
-              </Button>
             </div>
             
             <div className="flex items-center gap-6 mt-8">
