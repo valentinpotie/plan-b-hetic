@@ -50,56 +50,56 @@ const AppFeature = ({ title, description, imageSrc, imageAlt, reverse = false }:
 const FeatureSection = () => {
   const strategyFeatures = [
     {
-      title: "Analyse de tes habitudes",
-      description: "On regarde comment tu bouges aujourd'hui (promis, sans jugement)",
+      title: "Des solutions qui vous ressemblent",
+      description: "On s'adapte à votre rythme, vos contraintes et vos habitudes.",
       icon: <Activity size={32} className="text-green-700" />,
       color: "bg-green-100"
     },
     {
-      title: "Recommandations malignes",
-      description: "On se branche à ton agenda et on te propose mieux : plus vert, moins cher, plus rapide",
+      title: "Connecté à votre agenda",
+      description: "On anticipe vos trajets et vous propose l'alternative la plus écolo, juste au bon moment.",
       icon: <Calendar size={32} className="text-blue-700" />,
       color: "bg-blue-100"
     },
     {
-      title: "Récap de ta semaine",
-      description: "Temps, argent, CO₂ : t'as tout le bilan… et des idées pour faire encore mieux",
+      title: "Suivi de vos trajets",
+      description: "On propose un bilan hebdo de vos trajets avec l'impact.",
       icon: <FileText size={32} className="text-purple-700" />,
       color: "bg-purple-100"
     },
     {
       title: "Récompenses",
-      description: "Des vrais cadeaux si tu fais les bons choix 💸🌱",
+      description: "On récompense vos efforts.",
       icon: <Gift size={32} className="text-amber-700" />,
       color: "bg-amber-100"
     }
   ];
 
-  const appFeatures = [
+  const appTourSteps = [
     {
-      title: "Calcule ton empreinte carbone personnelle",
-      description: "Notre calculateur intelligent analyse ton style de vie pour estimer ton empreinte carbone, te donnant un point de départ clair pour agir pour le climat.",
+      title: "Calculez l'impact carbone de vos déplacements quotidiens",
+      description: "Connectez votre agenda (Google, Microsoft…) et laissez notre app analyser vos trajets pour estimer vos émissions à venir.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Calculateur d'empreinte carbone"
+      imageAlt: "Calculateur d'impact carbone"
     },
     {
-      title: "Compense les émissions que tu ne peux pas éviter",
-      description: "Soutiens des projets climatiques vérifiés qui éliminent ou préviennent les émissions de carbone. Choisis parmi la protection des forêts, les énergies renouvelables, et plus encore.",
+      title: "Recevez des suggestions de trajets plus durables",
+      description: "Chaque matin, notre app vous propose les meilleurs moyens de transport selon vos rendez-vous, votre rythme de vie et vos contraintes.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Projets de compensation",
+      imageAlt: "Suggestions de trajets",
       reverse: true
     },
     {
-      title: "Réduis tes émissions étape par étape",
-      description: "Reçois des suggestions personnalisées pour réduire ton empreinte carbone en fonction de ton style de vie. Suis tes progrès et célèbre tes réussites.",
+      title: "Suivez vos progrès semaine après semaine",
+      description: "Grâce à la connexion à vos apps de transport, vous recevez chaque fin de semaine un bilan clair de vos émissions évitées, des alternatives choisies et de votre évolution.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Réduction des émissions"
+      imageAlt: "Suivi des progrès"
     },
     {
-      title: "Multiplie ton impact et lance un mouvement",
-      description: "Partage ton parcours climatique avec tes amis et ta famille. Chaque action en inspire d'autres, créant un effet d'entraînement positif.",
+      title: "Soyez récompensé pour vos efforts",
+      description: "Obtenez des bons d'achat, des réductions ou des avantages en récompense de vos choix durables.",
       imageSrc: "/placeholder.svg",
-      imageAlt: "Multiplication de l'impact",
+      imageAlt: "Récompenses",
       reverse: true
     }
   ];
@@ -109,9 +109,9 @@ const FeatureSection = () => {
       <section id="features" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="mb-4">Ta stratégie d'action climatique globale</h2>
+            <h2 className="mb-4">Comment ça marche ?</h2>
             <p className="text-gray-600 text-lg">
-              Une approche complète pour lutter contre le changement climatique à travers quatre piliers essentiels.
+              Une approche simple pour réduire ton impact environnemental au quotidien.
             </p>
           </div>
           
@@ -126,9 +126,9 @@ const FeatureSection = () => {
       <section className="section-padding bg-secondary">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-4">Emballé dans une app d'impact social nouvelle génération</h2>
+            <h2 className="mb-4">Vos rendez-vous ne changent pas. Vos trajets, si.</h2>
             <p className="text-gray-600 text-lg">
-              Des fonctionnalités puissantes conçues pour rendre l'action climatique accessible, engageante et efficace.
+              Des fonctionnalités conçues pour rendre vos déplacements plus écologiques, sans complication.
             </p>
           </div>
           
@@ -146,11 +146,20 @@ const FeatureSection = () => {
         </div>
       </section>
       
-      <section className="section-padding bg-white">
-        <div className="container-custom space-y-24">
-          {appFeatures.map((feature, index) => (
-            <AppFeature key={index} {...feature} />
-          ))}
+      <section id="app-tour" className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-4">Planifiez votre journée, réduisez votre impact</h2>
+            <p className="text-gray-600 text-lg">
+              Découvrez comment DADA transforme vos habitudes de déplacement, une journée à la fois.
+            </p>
+          </div>
+          
+          <div className="space-y-24">
+            {appTourSteps.map((step, index) => (
+              <AppFeature key={index} {...step} />
+            ))}
+          </div>
         </div>
       </section>
       
@@ -159,7 +168,7 @@ const FeatureSection = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="mb-4">Notre app est différente.</h2>
             <p className="text-gray-600 text-lg">
-              Nous sommes la seule application climatique qui combine la compensation carbone, la réduction de l'empreinte et l'impact social en une seule expérience fluide.
+              DADA est la seule application qui combine analyse intelligente, suggestions personnalisées et récompenses dans une expérience fluide.
             </p>
             <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full mt-8">
               J'embarque dans l'aventure 🌍

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Download } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -9,14 +10,15 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl animate-slide-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Moins de CO₂, plus de cadeaux.
+              Pose tes clés, utilise tes pieds.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8">
-              Notre appli te dit comment te déplacer mieux — pour la planète, pour ton porte-monnaie… et sans prise de tête.
+              L'app qui te fait gagner à mieux te déplacer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
-                Je veux tester ça 🚀
+                <Download className="mr-2" size={20} />
+                Télécharger l'app
               </Button>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 text-lg rounded-full">
                 En savoir plus

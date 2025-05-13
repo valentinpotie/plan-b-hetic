@@ -11,24 +11,32 @@ import { Button } from "@/components/ui/button";
 const FAQ = () => {
   const faqItems = [
     {
-      question: "Qu'est-ce qu'ÉcoMouv ?",
-      answer: "ÉcoMouv est une application tout-en-un d'action climatique qui t'aide à compenser, réduire et multiplier ton impact sur la lutte contre le changement climatique. Elle combine le suivi de l'empreinte carbone, la compensation et des suggestions personnalisées en une seule expérience fluide."
+      question: "Comment l'application sait-elle quels transports me proposer ?",
+      answer: "Notre app se connecte à votre agenda et analyse vos rendez-vous et trajets du jour pour vous recommander des options de transport plus responsables."
     },
     {
-      question: "Comment fonctionne la compensation carbone ?",
-      answer: "La compensation carbone consiste à investir dans des projets qui réduisent ou éliminent les émissions de carbone ailleurs pour compenser les émissions que tu ne peux pas éviter. ÉcoMouv te met en relation avec des projets climatiques vérifiés dans le monde entier qui ont des avantages carbone démontrables."
+      question: "Est-ce que je dois tout changer dans ma manière de me déplacer ?",
+      answer: "Non. L'application s'adapte à votre rythme et propose des améliorations progressives."
     },
     {
-      question: "Les projets climatiques sont-ils vérifiés ?",
-      answer: "Oui, tous les projets climatiques disponibles sur ÉcoMouv sont vérifiés par des normes internationalement reconnues telles que Gold Standard et Verified Carbon Standard (VCS). Nous assurons la transparence en fournissant des informations détaillées sur chaque projet."
+      question: "Quels types de transports sont pris en compte ?",
+      answer: "Marche, vélo, transports en commun, covoiturage, ou trajets multimodaux."
     },
     {
-      question: "Comment puis-je maximiser mon impact climatique ?",
-      answer: "Tu peux maximiser ton impact en adoptant une approche globale : compenser ce que tu ne peux pas réduire, réduire ce que tu peux, et inspirer d'autres à rejoindre ton parcours climatique. L'effet multiplicateur de l'action communautaire est l'un des outils les plus puissants que nous avons contre le changement climatique."
+      question: "Est-ce que mes données sont sécurisées ?",
+      answer: "Oui. Nous collectons uniquement les données nécessaires, stockées de manière sécurisée."
     },
     {
-      question: "Mes données sont-elles sécurisées ?",
-      answer: "Nous prenons la confidentialité des données très au sérieux. Tes informations personnelles sont cryptées et stockées en toute sécurité. Nous ne vendons jamais tes données à des tiers et ne les utilisons que pour te fournir le meilleur service possible."
+      question: "Est-ce que je gagne vraiment quelque chose à utiliser l'app ?",
+      answer: "Oui. Vous gagnez du temps, réduisez votre empreinte carbone, et recevez des récompenses concrètes."
+    },
+    {
+      question: "Est-ce que c'est compliqué à utiliser ?",
+      answer: "Non. Une fois votre agenda connecté, l'app fonctionne en arrière-plan."
+    },
+    {
+      question: "Est-ce que je peux voir mes progrès ?",
+      answer: "Oui. Chaque semaine, vous recevez un tableau de bord personnalisé."
     }
   ];
 
@@ -36,9 +44,9 @@ const FAQ = () => {
     <section id="faq" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="mb-4">Des questions ?</h2>
+          <h2 className="mb-4">FAQ – Questions fréquentes</h2>
           <p className="text-gray-600 text-lg">
-            Trouve des réponses aux questions fréquentes sur ÉcoMouv et l'action climatique.
+            Trouve des réponses aux questions fréquentes sur DADA et ton impact environnemental.
           </p>
         </div>
         
