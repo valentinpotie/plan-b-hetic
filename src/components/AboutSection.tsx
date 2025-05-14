@@ -6,13 +6,13 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 const AboutSection = () => {
   // Liste des membres de l'équipe
   const teamMembers = [
-    { name: 'Alex', image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c' },
-    { name: 'Emma', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158' },
-    { name: 'Thomas', image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952' },
-    { name: 'Julie', image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7' },
-    { name: 'Maxime', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
-    { name: 'Sarah', image: 'https://images.unsplash.com/photo-1542740348-39501cd6e2b4' },
-    { name: 'Lucas', image: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1' },
+    { name: 'Alicia', image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c' },
+    { name: 'Amine', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158' },
+    { name: 'David', image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952' },
+    { name: 'Lucas', image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7' },
+    { name: 'Medhi', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
+    { name: 'Valentin', image: 'https://images.unsplash.com/photo-1542740348-39501cd6e2b4' },
+    { name: 'Yael', image: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1' },
   ];
 
   return (
