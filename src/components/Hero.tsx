@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 const Hero = () => {
@@ -18,14 +17,7 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex items-center gap-6 mt-8">
-              <div className="flex">
-                <img src="/placeholder.svg" alt="App Store" className="h-10" />
-              </div>
-              <div className="flex">
-                <img src="/placeholder.svg" alt="Google Play" className="h-10" />
-              </div>
-            </div>
+            
           </div>
           
           <div className="flex justify-center md:justify-end animate-fade-in">
