@@ -6,9 +6,8 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl animate-slide-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Pose tes clés, utilise tes pieds.</h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8">
-              L'app qui te fait gagner à mieux te déplacer.
-            </p>
+            <p className="text-lg md:text-xl text-gray-600 mb-8">Gagne du temps, réduis ton empreinte carbone et profite de récompenses.
+Plan B analyse ton agenda et te propose, chaque jour, le meilleur moyen de transport pour faire mieux — sans prise de tête.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
                 Télécharger l'app
