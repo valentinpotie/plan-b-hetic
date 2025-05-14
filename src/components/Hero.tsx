@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-secondary to-white overflow-hidden">
+  return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-secondary to-white overflow-hidden">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl animate-slide-up">
@@ -34,18 +31,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-secondary via-accent to-primary rounded-full blur-3xl opacity-30"></div>
               <div className="relative bg-white p-2 rounded-3xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
-                <img 
-                  src="/lovable-uploads/9b17bd2b-65cd-4b09-bed4-f5c7add0161b.png" 
-                  alt="Écrans de l'application mobile" 
-                  className="w-64 md:w-80 rounded-2xl"
-                />
+                <img alt="Écrans de l'application mobile" className="w-64 md:w-80 rounded-2xl" src="/lovable-uploads/39314d46-4009-471e-91e0-34965f30f2c0.png" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
