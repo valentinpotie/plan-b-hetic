@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 const Hero = () => {
@@ -31,7 +32,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-secondary via-accent to-primary rounded-full blur-3xl opacity-30"></div>
               <div className="relative bg-white p-2 rounded-3xl shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
-                <img alt="Écrans de l'application mobile" className="w-64 md:w-80 rounded-2xl" src="/lovable-uploads/39314d46-4009-471e-91e0-34965f30f2c0.png" />
+                <img alt="Écrans de l'application mobile" className="w-64 md:w-80 rounded-2xl" src="/lovable-uploads/caf965dd-ea12-4b02-85dc-5a3e99b15b91.png" />
               </div>
             </div>
           </div>
