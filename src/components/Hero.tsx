@@ -5,9 +5,7 @@ const Hero = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="max-w-2xl animate-slide-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Pose tes clés, utilise tes pieds.
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">tes clés, utilise tes pieds.</h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8">
               L'app qui te fait gagner à mieux te déplacer.
             </p>
