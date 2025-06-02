@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center md:justify-end">
-            <img alt="Écrans de l'application mobile" className="w-64 md:w-80 rounded-2xl" src="/lovable-uploads/b16fdadf-41dd-4513-8dbb-2d16790cb625.png" />
+            <img alt="Écrans de l'application mobile" className="w-64 md:w-80 rounded-2xl" src="/lovable-uploads/3223bf6a-73bf-4440-927e-be517cd06f05.png" />
           </div>
         </div>
       </div>
