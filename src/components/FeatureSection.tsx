@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Car, MapPin, Gift, Clock, Euro, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -80,26 +81,26 @@ const FeatureSection = () => {
   const features = [
     {
       number: "1️⃣",
-      title: "Comparaison intelligente A vs B",
-      description: "Plan B calcule en temps réel : tout en voiture VS voiture + transport en commun, pour te montrer l'option la plus rapide, économique et confortable.",
-      details: "Fini les estimations approximatives. L'app compare les vraies durées, coûts et niveau de stress pour chaque option selon la situation actuelle.",
-      icon: <Zap size={24} className="text-blue-700" />,
+      title: "Impossible d'abandonner sa voiture pour mes trajets",
+      description: "On sait que tu ne peux pas tout quitter pour faire tes trajets à vélo.",
+      details: "Plan B comprend que la voiture reste indispensable pour certains de tes déplacements. L'app t'aide à optimiser tes trajets sans te forcer à tout changer.",
+      icon: <Car size={24} className="text-blue-700" />,
       color: "bg-blue-100"
     },
     {
       number: "2️⃣", 
-      title: "Parking intelligent + guidage",
-      description: "L'app te guide vers le parking optimal : disponibilité en temps réel, prix, proximité des transports. Plus de tours de quartier à chercher une place.",
-      details: "Réservation possible, infos sur les correspondances, et guidage pas-à-pas jusqu'à ta destination finale.",
-      icon: <MapPin size={24} className="text-green-700" />,
+      title: "Flemme de faire des calculs pour savoir quel est le meilleur trajet",
+      description: "Flemme de faire des calculs pour savoir comment quel est le meilleur trajet voiture + transports.",
+      details: "Plus besoin de jongler entre 5 apps différentes. Plan B fait tous les calculs à ta place et te donne la solution optimale en quelques secondes.",
+      icon: <Zap size={24} className="text-green-700" />,
       color: "bg-green-100"
     },
     {
       number: "3️⃣",
-      title: "Récompenses pour les choix malins", 
-      description: "Gagne des points à chaque fois que tu choisis l'option optimisée. Échange-les contre des réductions, avantages locaux et récompenses concrètes.",
-      details: "Pas de culpabilisation, juste des bénéfices : économies trackées, temps gagné, et récompenses pour tes choix intelligents.",
-      icon: <Gift size={24} className="text-amber-700" />,
+      title: "Aucune idée d'où trouver des parkings", 
+      description: "Aucune idée d'où trouver des parkings sur ton trajets pour les combiner avec des transports.",
+      details: "L'app te guide vers les meilleurs parkings : disponibilité en temps réel, prix, proximité des transports. Réservation possible et guidage jusqu'à destination.",
+      icon: <MapPin size={24} className="text-amber-700" />,
       color: "bg-amber-100"
     }
   ];
