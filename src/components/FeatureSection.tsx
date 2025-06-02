@@ -105,21 +105,21 @@ const FeatureSection = () => {
     number: "01",
     title: "Dis-nous où tu veux aller",
     description: "Qu'importe la place et qu'importe l'endroit, sélectionne en deux clics ta destination et enregistre tes trajets favoris.",
-    imageSrc: "/lovable-uploads/74109e83-0279-4776-94ea-5e1238ea087e.png",
-    imageAlt: "Sélection de destination"
+    imageSrc: "/lovable-uploads/a0bc9ff5-8242-41a4-bd9d-742c94019de5.png",
+    imageAlt: "Interface de sélection de destination"
   }, {
     number: "02",
     title: "On te fait la meilleure recommandation de trajet",
     description: "Ta feuille de route personnalisée, qui te dit où te garer pour optimiser ton temps, budget et ton empreinte carbone.",
-    imageSrc: "/lovable-uploads/abb684d7-78f4-4ee5-9f0e-c0bf0946aff4.png",
-    imageAlt: "Recommandation de trajet",
+    imageSrc: "/lovable-uploads/82ce95ad-0c81-486e-b4b2-5e957e9ce172.png",
+    imageAlt: "Recommandation de trajet optimisé",
     reverse: true
   }, {
     number: "03",
     title: "T'es un boss, tu mérites une récompense",
     description: "Si tu réussis la mission en optimisant ton trajet avec Plan B, on te régale avec des cadeaux et récompenses.",
-    imageSrc: "/lovable-uploads/8ed73e71-72bc-400c-8bb6-777b7f6138d1.png",
-    imageAlt: "Récompenses"
+    imageSrc: "/lovable-uploads/313e8edf-f129-488f-9516-caea8ea4a13e.png",
+    imageAlt: "Système de récompenses et points"
   }];
   return <>
       <section id="features" className="section-padding bg-white">
