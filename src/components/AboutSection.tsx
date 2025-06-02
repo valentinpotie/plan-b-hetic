@@ -31,10 +31,7 @@ const AboutSection = () => {
             <h2 className="mb-4">La tcheam de l'espace</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Qui sommes-nous ? 
-
-• Une équipe de passionnés Nous sommes une équipe d'étudiants en Master Product Management à HETIC, passionnés par la tech et l'écologie, avec une mission : rendre les choix écologiques plus simples et accessibles. • Notre mission ? Apporter des solutions concrètes pour des trajets plus responsables, sans prise de tête. On veut rendre l'écologie compatible avec la vraie vie. Notre équipe Une équipe diversifiée qui partage une passion commune pour la création d'un avenir plus durable.
-              </h3>
+                <h3 className="mb-2 font-normal text-base">Qui sommes-nous ? Nous sommes une équipe d'étudiants en Master Product Management à HETIC,  avec une mission : rendre les choix écologiques plus simples et accessibles. </h3>
                 
               </div>
               <div>
