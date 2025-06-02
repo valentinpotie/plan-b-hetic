@@ -1,46 +1,36 @@
 
 import React from 'react';
-import { Activity, Calendar, Map, Gift, QrCode } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Car, MapPin, Gift } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 type FeatureProps = {
+  number: string;
   title: string;
   description: string;
+  details: string;
   icon: React.ReactNode;
   color: string;
 };
 
-const StrategyFeature = ({
+const Feature = ({
+  number,
   title,
   description,
+  details,
   icon,
   color
 }: FeatureProps) => {
   return (
-    <div className="flex flex-col items-center text-center">
-      <div className={`${color} w-16 h-16 rounded-full flex items-center justify-center mb-4`}>
-        {icon}
+    <div className="flex flex-col items-start text-left p-6 bg-white rounded-xl shadow-sm border">
+      <div className="flex items-center mb-4">
+        <div className="text-4xl font-bold text-primary mr-4">{number}</div>
+        <div className={`${color} w-12 h-12 rounded-full flex items-center justify-center`}>
+          {icon}
+        </div>
       </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-      <Button 
-        className="mt-4 bg-primary hover:bg-primary/90"
-        onClick={() => {
-          if (typeof window.amplitude !== 'undefined') {
-            window.amplitude.track('button_click', {
-              button_id: 'download_app_feature',
-              button_text: 'Télécharger l\'app',
-              button_location: 'strategy_feature',
-              button_type: 'cta',
-              page: 'home'
-            });
-          }
-        }}
-      >
-        Télécharger l'app
-      </Button>
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <p className="text-gray-700 mb-3 font-medium">{description}</p>
+      <p className="text-gray-600 text-sm leading-relaxed">{details}</p>
     </div>
   );
 };
@@ -78,7 +68,7 @@ const AppFeature = ({
             if (typeof window.amplitude !== 'undefined') {
               window.amplitude.track('button_click', {
                 button_id: `download_app_step_${number}`,
-                button_text: 'Télécharger l\'app',
+                button_text: 'Télécharge maintenant',
                 button_location: 'app_tour_feature',
                 button_type: 'cta',
                 page: 'home'
@@ -86,7 +76,7 @@ const AppFeature = ({
             }
           }}
         >
-          Télécharger l'app
+          Télécharge maintenant
         </Button>
       </div>
       <div className={`flex justify-center ${reverse ? 'md:order-1' : ''}`}>
@@ -102,23 +92,29 @@ const AppFeature = ({
 };
 
 const FeatureSection = () => {
-  const strategyFeatures = [
+  const features = [
     {
-      title: "Ton app qui comprend tes déplacements",
-      description: "Suis automatiquement tes trajets, sans effort",
-      icon: <Map size={32} className="text-green-700" />,
+      number: "1️⃣",
+      title: "Ton trajet optimisé",
+      description: "Plan B calcule le meilleur trajet en combinant voiture et transports en commun pour économiser ton temps, ton argent et réduire ton empreinte carbone.",
+      details: "L'application choisit le meilleur mix en fonction de ta destination, de ton emploi du temps et des conditions de circulation.",
+      icon: <Car size={24} className="text-green-700" />,
       color: "bg-green-100"
     },
     {
-      title: "Des recommandations de trajet plus responsable",
-      description: "Reçois des suggestions adaptées à tes déplacements",
-      icon: <Calendar size={32} className="text-blue-700" />,
+      number: "2️⃣",
+      title: "Parkings pratiques et disponibles",
+      description: "Plan B te propose les parkings les plus proches de ton itinéraire, avec toutes les infos utiles : disponibilité, prix et horaires.",
+      details: "Tu n'as plus à chercher un parking pendant 30 minutes, l'app le trouve pour toi.",
+      icon: <MapPin size={24} className="text-blue-700" />,
       color: "bg-blue-100"
     },
     {
-      title: "Des trajets qui te rapportent",
-      description: "Gagne des récompenses à chaque trajet",
-      icon: <Gift size={32} className="text-amber-700" />,
+      number: "3️⃣",
+      title: "Récompenses pour tes choix responsables",
+      description: "Chaque fois que tu choisis une option de transport plus écologique, tu gagnes des récompenses : bons d'achat, réductions et avantages locaux.",
+      details: "Plus tu réduis ton empreinte carbone, plus tu bénéficies de récompenses.",
+      icon: <Gift size={24} className="text-amber-700" />,
       color: "bg-amber-100"
     }
   ];
@@ -161,24 +157,43 @@ const FeatureSection = () => {
       <section id="features" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="mb-4">Comment ça marche ?</h2>
+            <h2 className="mb-4">🧩 Ce que Plan B fait</h2>
             <p className="text-gray-600 text-lg">
-              Une approche simple pour réduire ton impact environnemental au quotidien.
+              Une approche simple pour optimiser tes trajets au quotidien.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {strategyFeatures.map((feature, index) => (
-              <StrategyFeature key={index} {...feature} />
+            {features.map((feature, index) => (
+              <Feature key={index} {...feature} />
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg rounded-full"
+              onClick={() => {
+                if (typeof window.amplitude !== 'undefined') {
+                  window.amplitude.track('button_click', {
+                    button_id: 'download_app_features_cta',
+                    button_text: 'Télécharge l\'app et optimise tes trajets dès maintenant !',
+                    button_location: 'features_section',
+                    button_type: 'cta',
+                    page: 'home'
+                  });
+                }
+              }}
+            >
+              Télécharge l'app et optimise tes trajets dès maintenant !
+            </Button>
           </div>
         </div>
       </section>
       
-      <section id="app-tour" className="section-padding bg-white">
+      <section id="app-tour" className="section-padding bg-secondary/30">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-4">Planifie ta journée, réduis ton impact</h2>
+            <h2 className="mb-4">Comment ça fonctionne</h2>
             <p className="text-gray-600 text-lg">
               Découvre comment Plan B transforme tes habitudes de déplacement, une journée à la fois.
             </p>

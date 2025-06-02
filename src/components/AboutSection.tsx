@@ -20,19 +20,21 @@ const AboutSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-4">Plan B, c'est qui ?</h2>
-            <p className="text-gray-600 text-lg mb-6">
-              On est une team d'étudiants en Master Product Management à HETIC, avec un pied dans la tech, l'autre dans l'écologie, et la tête dans les solutions concrètes.
-            </p>
-            <p className="text-gray-600 mb-4">
-              Avec Plan B, on veut rendre l'écologie un peu moins prise de tête, et beaucoup plus compatible avec la vraie vie.
-            </p>
-            <p className="text-gray-600 mb-4">
-              Pas de grandes leçons, juste un coup de pouce pour mieux faire au quotidien, sans tout changer.
-            </p>
-            <p className="text-gray-600">
-              Notre idée ? Commencer par les trajets — parce que c'est là qu'on peut avoir de l'impact, facilement, et dès maintenant.
-            </p>
+            <h2 className="mb-4">Qui sommes-nous ?</h2>
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">• Une équipe de passionnés</h3>
+                <p className="text-gray-600">
+                  Nous sommes une équipe d'étudiants en Master Product Management à HETIC, passionnés par la tech et l'écologie, avec une mission : rendre les choix écologiques plus simples et accessibles.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">• Notre mission ?</h3>
+                <p className="text-gray-600">
+                  Apporter des solutions concrètes pour des trajets plus responsables, sans prise de tête. On veut rendre l'écologie compatible avec la vraie vie.
+                </p>
+              </div>
+            </div>
           </div>
           
           <div className="flex justify-center">

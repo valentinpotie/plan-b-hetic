@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Plan B</h3>
             <p className="text-gray-600 mb-4">
-              Ensemble pour une mobilité plus verte, un trajet à la fois.
+              L'appli qui t'aide à mieux bouger, pour des trajets plus responsables et optimisés.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-primary transition-colors">
@@ -31,8 +31,8 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Application</h4>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-gray-600 hover:text-primary transition-colors">Comment ça marche</a></li>
-              <li><a href="#app-tour" className="text-gray-600 hover:text-primary transition-colors">Fonctionnalités</a></li>
+              <li><a href="#features" className="text-gray-600 hover:text-primary transition-colors">Ce que Plan B fait</a></li>
+              <li><a href="#app-tour" className="text-gray-600 hover:text-primary transition-colors">Comment ça fonctionne</a></li>
               <li><a href="#faq" className="text-gray-600 hover:text-primary transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -50,10 +50,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Légal</h4>
             <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-primary transition-colors">Contactez-nous</a></li>
               <li><a href="#" className="text-gray-600 hover:text-primary transition-colors">Mentions légales</a></li>
               <li><a href="#" className="text-gray-600 hover:text-primary transition-colors">Politique de confidentialité</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-primary transition-colors">Conditions d'utilisation</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-primary transition-colors">Protection des données</a></li>
             </ul>
           </div>
         </div>
