@@ -105,20 +105,20 @@ const FeatureSection = () => {
     number: "01",
     title: "Dis-nous où tu veux aller",
     description: "Qu'importe la place et qu'importe l'endroit, sélectionne en deux clics ta destination et enregistre tes trajets favoris.",
-    imageSrc: "/lovable-uploads/a0bc9ff5-8242-41a4-bd9d-742c94019de5.png",
+    imageSrc: "/lovable-uploads/56c822b7-bce0-4c3a-bfec-125ad937d525.png",
     imageAlt: "Interface de sélection de destination"
   }, {
     number: "02",
     title: "On te fait la meilleure recommandation de trajet",
     description: "Ta feuille de route personnalisée, qui te dit où te garer pour optimiser ton temps, budget et ton empreinte carbone.",
-    imageSrc: "/lovable-uploads/82ce95ad-0c81-486e-b4b2-5e957e9ce172.png",
+    imageSrc: "/lovable-uploads/60b0fde9-4687-4666-b2e8-45711ec79f49.png",
     imageAlt: "Recommandation de trajet optimisé",
     reverse: true
   }, {
     number: "03",
     title: "T'es un boss, tu mérites une récompense",
     description: "Si tu réussis la mission en optimisant ton trajet avec Plan B, on te régale avec des cadeaux et récompenses.",
-    imageSrc: "/lovable-uploads/313e8edf-f129-488f-9516-caea8ea4a13e.png",
+    imageSrc: "/lovable-uploads/4a733fcd-b802-4291-bf02-a252163cb38a.png",
     imageAlt: "Système de récompenses et points"
   }];
   return <>
