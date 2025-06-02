@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Car, MapPin, Gift, Clock, Euro, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -108,33 +107,25 @@ const FeatureSection = () => {
   const appTourSteps = [
     {
       number: "01",
-      title: "Analyse de tes trajets habituels",
-      description: "Plan B apprend tes habitudes de déplacement et identifie automatiquement où tu pourrais gagner du temps ou économiser en combinant voiture + transports.",
+      title: "Dis-nous où tu veux aller",
+      description: "Qu'importe la place et qu'importe l'endroit, sélectionne en deux clics ta destination et enregistre tes trajets favoris.",
       imageSrc: "/lovable-uploads/74109e83-0279-4776-94ea-5e1238ea087e.png",
-      imageAlt: "Analyse des trajets"
+      imageAlt: "Sélection de destination"
     },
     {
       number: "02", 
-      title: "Suggestions contextuelles quotidiennes",
-      description: "Chaque matin, reçois des suggestions personnalisées basées sur ton agenda, la météo, le trafic et les perturbations transport - uniquement quand ça vaut le coup.",
+      title: "On te fait la meilleure recommandation de trajet",
+      description: "Ta feuille de route personnalisée, qui te dit où te garer pour optimiser ton temps, budget et ton empreinte carbone.",
       imageSrc: "/lovable-uploads/abb684d7-78f4-4ee5-9f0e-c0bf0946aff4.png",
-      imageAlt: "Suggestions quotidiennes",
+      imageAlt: "Recommandation de trajet",
       reverse: true
     },
     {
       number: "03",
-      title: "Tableau de bord des gains",
-      description: "Visualise concrètement tes bénéfices : temps économisé, argent épargné, stress évité. Plus des récompenses à débloquer selon tes performances.",
+      title: "T'es un boss, tu mérites une récompense",
+      description: "Si tu réussis la mission en optimisant ton trajet avec Plan B, on te régale avec des cadeaux et récompenses.",
       imageSrc: "/lovable-uploads/8ed73e71-72bc-400c-8bb6-777b7f6138d1.png", 
-      imageAlt: "Tableau de bord"
-    },
-    {
-      number: "04",
-      title: "Guidage en temps réel",
-      description: "De ton parking jusqu'à ta destination finale : Plan B te guide étape par étape avec les meilleures correspondances et options de mobilité douce.",
-      imageSrc: "/lovable-uploads/3d0ac83d-fe53-4216-b1bf-de1aba866f1e.png",
-      imageAlt: "Guidage temps réel", 
-      reverse: true
+      imageAlt: "Récompenses"
     }
   ];
 

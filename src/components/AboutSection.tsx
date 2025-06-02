@@ -19,24 +19,24 @@ const AboutSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-4">Qui sommes-nous ?</h2>
+            <h2 className="mb-4">Pourquoi nous et pas une autre ?</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Une équipe de pragmatiques</h3>
+                <h3 className="text-xl font-semibold mb-2">• Impossible d'abandonner sa voiture pour mes trajets</h3>
                 <p className="text-gray-600">
-                  Nous sommes une équipe d'étudiants en Master Product Management à HETIC. Notre mission : créer des solutions concrètes qui s'adaptent à la vraie vie, pas l'inverse.
+                  On sait que tu ne peux pas tout quitter pour faire tes trajets à vélo.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Notre approche ?</h3>
+                <h3 className="text-xl font-semibold mb-2">• Flemme de faire des calculs pour savoir quel est le meilleur trajet</h3>
                 <p className="text-gray-600">
-                  Pas de leçons de morale. Juste des outils intelligents qui t'aident à faire les choix les plus malins pour tes déplacements. L'impact positif, c'est le bonus.
+                  Flemme de faire des calculs pour savoir comment quel est le meilleur trajet voiture + transports.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Pourquoi Plan B ?</h3>
+                <h3 className="text-xl font-semibold mb-2">• Aucune idée d'où trouver des parkings</h3>
                 <p className="text-gray-600">
-                  Parce qu'on croit qu'il ne faut pas changer les gens, mais leur donner de meilleurs outils. Plan B, c'est ta voiture + l'intelligence collective des transports.
+                  Aucune idée d'où trouver des parkings sur ton trajets pour les combiner avec des transports.
                 </p>
               </div>
             </div>
