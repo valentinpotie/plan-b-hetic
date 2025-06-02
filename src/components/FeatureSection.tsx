@@ -89,15 +89,15 @@ const FeatureSection = () => {
   }, {
     number: "2️⃣",
     title: "Flemme de faire des calculs pour savoir quel est le meilleur trajet",
-    description: "Flemme de faire des calculs pour savoir comment quel est le meilleur trajet voiture + transports.",
+    description: "Plus besoin de jongler entre 5 apps différentes. Plan B fait tous les calculs à ta place",
     details: "Plus besoin de jongler entre 5 apps différentes. Plan B fait tous les calculs à ta place et te donne la solution optimale en quelques secondes.",
     icon: <Zap size={24} className="text-green-700" />,
     color: "bg-green-100"
   }, {
     number: "3️⃣",
     title: "Aucune idée d'où trouver des parkings",
-    description: "Aucune idée d'où trouver des parkings sur ton trajets pour les combiner avec des transports.",
-    details: "L'app te guide vers les meilleurs parkings : disponibilité en temps réel, prix, proximité des transports. Réservation possible et guidage jusqu'à destination.",
+    description: "L'app te guide vers les meilleurs parkings : disponibilité en temps réel, prix, proximité des transports.",
+    details: "L'app te guide vers les meilleurs parkings : disponibilité en temps réel, prix, proximité des transports.",
     icon: <MapPin size={24} className="text-amber-700" />,
     color: "bg-amber-100"
   }];

@@ -30,13 +30,13 @@ const AboutSection = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">• Flemme de faire des calculs pour savoir quel est le meilleur trajet</h3>
                 <p className="text-gray-600">
-                  Flemme de faire des calculs pour savoir comment quel est le meilleur trajet voiture + transports.
+                  Plus besoin de jongler entre 5 apps différentes. Plan B fait tous les calculs à ta place.
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">• Aucune idée d'où trouver des parkings</h3>
                 <p className="text-gray-600">
-                  Aucune idée d'où trouver des parkings sur ton trajets pour les combiner avec des transports.
+                  L'app te guide vers les meilleurs parkings : disponibilité en temps réel, prix, proximité des transports.
                 </p>
               </div>
             </div>
