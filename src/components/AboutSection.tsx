@@ -1,43 +1,49 @@
-
 import React from 'react';
 import { Users } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-
 const AboutSection = () => {
-  const teamMembers = [
-    { name: 'Alicia', image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c' },
-    { name: 'Amine', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158' },
-    { name: 'David', image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952' },
-    { name: 'Lucas', image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7' },
-    { name: 'Medhi', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
-    { name: 'Valentin', image: 'https://images.unsplash.com/photo-1542740348-39501cd6e2b4' },
-    { name: 'Yael', image: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1' },
-  ];
-
-  return (
-    <section id="about" className="section-padding bg-primary/5">
+  const teamMembers = [{
+    name: 'Alicia',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c'
+  }, {
+    name: 'Amine',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158'
+  }, {
+    name: 'David',
+    image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952'
+  }, {
+    name: 'Lucas',
+    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7'
+  }, {
+    name: 'Medhi',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d'
+  }, {
+    name: 'Valentin',
+    image: 'https://images.unsplash.com/photo-1542740348-39501cd6e2b4'
+  }, {
+    name: 'Yael',
+    image: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1'
+  }];
+  return <section id="about" className="section-padding bg-primary/5">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-4">Pourquoi nous et pas une autre ?</h2>
+            <h2 className="mb-4">La tcheam de l'espace</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Impossible d'abandonner sa voiture pour mes trajets</h3>
-                <p className="text-gray-600">
-                  On sait que tu ne peux pas tout quitter pour faire tes trajets à vélo.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Qui sommes-nous ? 
+
+• Une équipe de passionnés Nous sommes une équipe d'étudiants en Master Product Management à HETIC, passionnés par la tech et l'écologie, avec une mission : rendre les choix écologiques plus simples et accessibles. • Notre mission ? Apporter des solutions concrètes pour des trajets plus responsables, sans prise de tête. On veut rendre l'écologie compatible avec la vraie vie. Notre équipe Une équipe diversifiée qui partage une passion commune pour la création d'un avenir plus durable.
+              </h3>
+                
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Flemme de faire des calculs pour savoir quel est le meilleur trajet</h3>
-                <p className="text-gray-600">
-                  Plus besoin de jongler entre 5 apps différentes. Plan B fait tous les calculs à ta place.
-                </p>
+                
+                
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Aucune idée d'où trouver des parkings</h3>
-                <p className="text-gray-600">
-                  L'app te guide vers les meilleurs parkings : disponibilité en temps réel, prix, proximité des transports.
-                </p>
+                
+                
               </div>
             </div>
           </div>
@@ -57,23 +63,19 @@ const AboutSection = () => {
                 </p>
                 
                 <div className="grid grid-cols-3 gap-4 mt-6">
-                  {teamMembers.map((member, index) => (
-                    <div key={index} className="flex flex-col items-center">
+                  {teamMembers.map((member, index) => <div key={index} className="flex flex-col items-center">
                       <Avatar className="w-16 h-16 mb-2">
                         <AvatarImage src={member.image} alt={`Photo de ${member.name}`} className="object-cover" />
                         <AvatarFallback>{member.name.substring(0, 2)}</AvatarFallback>
                       </Avatar>
                       <span className="text-sm font-medium">{member.name}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
