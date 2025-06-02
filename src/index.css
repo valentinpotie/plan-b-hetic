@@ -110,152 +110,12 @@
 }
 
 @layer utilities {
-  /* Hero Animations */
-  .animate-hero-fade-in {
-    animation: heroFadeIn 0.8s ease-out forwards;
-    opacity: 0;
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
   }
 
-  .animate-parallax {
-    animation: parallax 20s ease-in-out infinite;
-  }
-
-  /* Feature Animations */
-  .animate-feature-slide-up {
-    animation: featureSlideUp 0.6s ease-out forwards;
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  .animate-icon-scale {
-    animation: iconScale 0.4s ease-out 0.3s forwards;
-    transform: scale(0.8);
-  }
-
-  .animate-section-fade-in {
-    animation: sectionFadeIn 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  .animate-cta-fade-in {
-    animation: ctaFadeIn 0.6s ease-out forwards;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  /* About Section Animations */
-  .animate-about-fade-in {
-    animation: aboutFadeIn 0.6s ease-out forwards;
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  .animate-about-text-zoom {
-    animation: aboutTextZoom 0.4s ease-out forwards;
-    opacity: 0;
-    transform: scale(0.95);
-  }
-
-  /* Footer Animations */
-  .animate-footer-slide-up {
-    animation: footerSlideUp 0.6s ease-out forwards;
-  }
-
-  .animate-footer-fade-in {
-    animation: footerFadeIn 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
-  /* Animation Delays */
-  .animation-delay-200 {
-    animation-delay: 200ms;
-  }
-
-  .animation-delay-400 {
-    animation-delay: 400ms;
-  }
-
-  .animation-delay-600 {
-    animation-delay: 600ms;
-  }
-
-  .animation-delay-800 {
-    animation-delay: 800ms;
-  }
-
-  @keyframes heroFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes parallax {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  @keyframes featureSlideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes iconScale {
-    to {
-      transform: scale(1.1);
-    }
-  }
-
-  @keyframes sectionFadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes ctaFadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes aboutFadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes aboutTextZoom {
-    to {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-  }
-
-  @keyframes footerSlideUp {
-    from {
-      transform: translateY(20px);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes footerFadeIn {
-    to {
-      opacity: 1;
-    }
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
   }
 
   @keyframes fadeIn {
@@ -276,13 +136,5 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.8s ease-out forwards;
   }
 }
