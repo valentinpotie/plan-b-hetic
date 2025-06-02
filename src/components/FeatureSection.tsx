@@ -26,7 +26,7 @@ const Feature = ({
       </div>
       <h3 className="text-xl font-bold mb-3">{title}</h3>
       <p className="text-gray-700 mb-3 font-medium">{description}</p>
-      <p className="text-gray-600 text-sm leading-relaxed">{details}</p>
+      
     </div>;
 };
 type AppFeatureProps = {
