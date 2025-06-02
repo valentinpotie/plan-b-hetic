@@ -125,8 +125,8 @@ const FeatureSection = () => {
       <section id="features" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="mb-4">Ce que Plan B fait pour toi</h2>
-            <p className="text-gray-600 text-lg">L'assistant qui optimise tes déplacements sans te faire changer tes habitudes</p>
+            <h2 className="mb-4">Ta vie avant Plan B c'était</h2>
+            <p className="text-gray-600 text-lg"></p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
