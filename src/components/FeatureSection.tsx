@@ -1,6 +1,8 @@
+
 import React from 'react';
-import { Car, MapPin, Gift } from 'lucide-react';
+import { Car, MapPin, Gift, Clock, Euro, Zap } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+
 type FeatureProps = {
   number: string;
   title: string;
@@ -9,15 +11,10 @@ type FeatureProps = {
   icon: React.ReactNode;
   color: string;
 };
-const Feature = ({
-  number,
-  title,
-  description,
-  details,
-  icon,
-  color
-}: FeatureProps) => {
-  return <div className="flex flex-col items-start text-left p-6 bg-white rounded-xl shadow-sm border">
+
+const Feature = ({ number, title, description, details, icon, color }: FeatureProps) => {
+  return (
+    <div className="flex flex-col items-start text-left p-6 bg-white rounded-xl shadow-sm border">
       <div className="flex items-center mb-4">
         <div className="text-4xl font-bold text-primary mr-4">{number}</div>
         <div className={`${color} w-12 h-12 rounded-full flex items-center justify-center`}>
@@ -27,8 +24,10 @@ const Feature = ({
       <h3 className="text-xl font-bold mb-3">{title}</h3>
       <p className="text-gray-700 mb-3 font-medium">{description}</p>
       <p className="text-gray-600 text-sm leading-relaxed">{details}</p>
-    </div>;
+    </div>
+  );
 };
+
 type AppFeatureProps = {
   number: string;
   title: string;
@@ -37,15 +36,10 @@ type AppFeatureProps = {
   imageAlt: string;
   reverse?: boolean;
 };
-const AppFeature = ({
-  number,
-  title,
-  description,
-  imageSrc,
-  imageAlt,
-  reverse = false
-}: AppFeatureProps) => {
-  return <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${reverse ? 'md:flex-row-reverse' : ''}`}>
+
+const AppFeature = ({ number, title, description, imageSrc, imageAlt, reverse = false }: AppFeatureProps) => {
+  return (
+    <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${reverse ? 'md:flex-row-reverse' : ''}`}>
       <div className={`${reverse ? 'md:order-2' : ''}`}>
         <div className="flex flex-col mb-6">
           <div className="flex items-center mb-2">
@@ -54,17 +48,20 @@ const AppFeature = ({
           <h3 className="text-3xl font-black mb-4">{title}</h3>
           <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
         </div>
-        <Button className="mt-2 bg-primary hover:bg-primary/90" onClick={() => {
-        if (typeof window.amplitude !== 'undefined') {
-          window.amplitude.track('button_click', {
-            button_id: `download_app_step_${number}`,
-            button_text: 'Télécharge maintenant',
-            button_location: 'app_tour_feature',
-            button_type: 'cta',
-            page: 'home'
-          });
-        }
-      }}>
+        <Button 
+          className="mt-2 bg-primary hover:bg-primary/90" 
+          onClick={() => {
+            if (typeof window.amplitude !== 'undefined') {
+              window.amplitude.track('button_click', {
+                button_id: `download_app_step_${number}`,
+                button_text: 'Télécharge maintenant',
+                button_location: 'app_tour_feature',
+                button_type: 'cta',
+                page: 'home'
+              });
+            }
+          }}
+        >
           Télécharge maintenant
         </Button>
       </div>
@@ -76,83 +73,102 @@ const AppFeature = ({
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 const FeatureSection = () => {
-  const features = [{
-    number: "1️⃣",
-    title: "Ton trajet optimisé",
-    description: "Plan B calcule le meilleur trajet en combinant voiture et transports en commun pour économiser ton temps, ton argent et réduire ton empreinte carbone.",
-    details: "L'application choisit le meilleur mix en fonction de ta destination, de ton emploi du temps et des conditions de circulation.",
-    icon: <Car size={24} className="text-green-700" />,
-    color: "bg-green-100"
-  }, {
-    number: "2️⃣",
-    title: "Parkings pratiques et disponibles",
-    description: "Plan B te propose les parkings les plus proches de ton itinéraire, avec toutes les infos utiles : disponibilité, prix et horaires.",
-    details: "Tu n'as plus à chercher un parking pendant 30 minutes, l'app le trouve pour toi.",
-    icon: <MapPin size={24} className="text-blue-700" />,
-    color: "bg-blue-100"
-  }, {
-    number: "3️⃣",
-    title: "Récompenses pour tes choix responsables",
-    description: "Chaque fois que tu choisis une option de transport plus écologique, tu gagnes des récompenses : bons d'achat, réductions et avantages locaux.",
-    details: "Plus tu réduis ton empreinte carbone, plus tu bénéficies de récompenses.",
-    icon: <Gift size={24} className="text-amber-700" />,
-    color: "bg-amber-100"
-  }];
-  const appTourSteps = [{
-    number: "01",
-    title: "Connexion à ton agenda",
-    description: "Dès la connexion de ton agenda (Google, Microsoft…), notre app analyse tes trajets pour estimer tes émissions à venir. Tu découvres concrètement l'empreinte carbone liée à ta mobilité.",
-    imageSrc: "/lovable-uploads/74109e83-0279-4776-94ea-5e1238ea087e.png",
-    imageAlt: "Connexion à ton agenda"
-  }, {
-    number: "02",
-    title: "Tes suggestions du jour",
-    description: "Chaque matin, notre app te propose les meilleurs moyens de transport selon tes rendez-vous, ton rythme de vie et tes contraintes : pas de vélo si tu n'en fais jamais, pas de marche si tu es pressé·e.",
-    imageSrc: "/lovable-uploads/abb684d7-78f4-4ee5-9f0e-c0bf0946aff4.png",
-    imageAlt: "Suggestions de trajets",
-    reverse: true
-  }, {
-    number: "03",
-    title: "Ton bilan de la semaine",
-    description: "Grâce à la connexion à tes apps de transport, tu reçois chaque fin de semaine un bilan clair de tes émissions évitées, des alternatives choisies et de ton évolution.",
-    imageSrc: "/lovable-uploads/8ed73e71-72bc-400c-8bb6-777b7f6138d1.png",
-    imageAlt: "Suivi des progrès"
-  }, {
-    number: "04",
-    title: "Scanne le QR code EXO",
-    description: "Dès le scan du QR code dans la salle, tu reçois directement tes exocoins sur ton compte EXO !",
-    imageSrc: "/lovable-uploads/3d0ac83d-fe53-4216-b1bf-de1aba866f1e.png",
-    imageAlt: "Récompenses",
-    reverse: true
-  }];
-  return <>
+  const features = [
+    {
+      number: "1️⃣",
+      title: "Comparaison intelligente A vs B",
+      description: "Plan B calcule en temps réel : tout en voiture VS voiture + transport en commun, pour te montrer l'option la plus rapide, économique et confortable.",
+      details: "Fini les estimations approximatives. L'app compare les vraies durées, coûts et niveau de stress pour chaque option selon la situation actuelle.",
+      icon: <Zap size={24} className="text-blue-700" />,
+      color: "bg-blue-100"
+    },
+    {
+      number: "2️⃣", 
+      title: "Parking intelligent + guidage",
+      description: "L'app te guide vers le parking optimal : disponibilité en temps réel, prix, proximité des transports. Plus de tours de quartier à chercher une place.",
+      details: "Réservation possible, infos sur les correspondances, et guidage pas-à-pas jusqu'à ta destination finale.",
+      icon: <MapPin size={24} className="text-green-700" />,
+      color: "bg-green-100"
+    },
+    {
+      number: "3️⃣",
+      title: "Récompenses pour les choix malins", 
+      description: "Gagne des points à chaque fois que tu choisis l'option optimisée. Échange-les contre des réductions, avantages locaux et récompenses concrètes.",
+      details: "Pas de culpabilisation, juste des bénéfices : économies trackées, temps gagné, et récompenses pour tes choix intelligents.",
+      icon: <Gift size={24} className="text-amber-700" />,
+      color: "bg-amber-100"
+    }
+  ];
+
+  const appTourSteps = [
+    {
+      number: "01",
+      title: "Analyse de tes trajets habituels",
+      description: "Plan B apprend tes habitudes de déplacement et identifie automatiquement où tu pourrais gagner du temps ou économiser en combinant voiture + transports.",
+      imageSrc: "/lovable-uploads/74109e83-0279-4776-94ea-5e1238ea087e.png",
+      imageAlt: "Analyse des trajets"
+    },
+    {
+      number: "02", 
+      title: "Suggestions contextuelles quotidiennes",
+      description: "Chaque matin, reçois des suggestions personnalisées basées sur ton agenda, la météo, le trafic et les perturbations transport - uniquement quand ça vaut le coup.",
+      imageSrc: "/lovable-uploads/abb684d7-78f4-4ee5-9f0e-c0bf0946aff4.png",
+      imageAlt: "Suggestions quotidiennes",
+      reverse: true
+    },
+    {
+      number: "03",
+      title: "Tableau de bord des gains",
+      description: "Visualise concrètement tes bénéfices : temps économisé, argent épargné, stress évité. Plus des récompenses à débloquer selon tes performances.",
+      imageSrc: "/lovable-uploads/8ed73e71-72bc-400c-8bb6-777b7f6138d1.png", 
+      imageAlt: "Tableau de bord"
+    },
+    {
+      number: "04",
+      title: "Guidage en temps réel",
+      description: "De ton parking jusqu'à ta destination finale : Plan B te guide étape par étape avec les meilleures correspondances et options de mobilité douce.",
+      imageSrc: "/lovable-uploads/3d0ac83d-fe53-4216-b1bf-de1aba866f1e.png",
+      imageAlt: "Guidage temps réel", 
+      reverse: true
+    }
+  ];
+
+  return (
+    <>
       <section id="features" className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="mb-4">Pourquoi nous et pas une autre ? </h2>
-            <p className="text-gray-600 text-lg">L'app ultime pour optimiser tes trajets du quotidien</p>
+            <h2 className="mb-4">Ce que Plan B fait pour toi</h2>
+            <p className="text-gray-600 text-lg">L'assistant qui optimise tes déplacements sans te faire changer tes habitudes</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => <Feature key={index} {...feature} />)}
+            {features.map((feature, index) => (
+              <Feature key={index} {...feature} />
+            ))}
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg rounded-full" onClick={() => {
-            if (typeof window.amplitude !== 'undefined') {
-              window.amplitude.track('button_click', {
-                button_id: 'download_app_features_cta',
-                button_text: 'Télécharge l\'app et optimise tes trajets dès maintenant !',
-                button_location: 'features_section',
-                button_type: 'cta',
-                page: 'home'
-              });
-            }
-          }}>
-              Télécharge l'app et optimise tes trajets dès maintenant !
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg rounded-full" 
+              onClick={() => {
+                if (typeof window.amplitude !== 'undefined') {
+                  window.amplitude.track('button_click', {
+                    button_id: 'download_app_features_cta',
+                    button_text: 'Fais le choix malin, télécharge Plan B !',
+                    button_location: 'features_section',
+                    button_type: 'cta',
+                    page: 'home'
+                  });
+                }
+              }}
+            >
+              Fais le choix malin, télécharge Plan B !
             </Button>
           </div>
         </div>
@@ -161,17 +177,21 @@ const FeatureSection = () => {
       <section id="app-tour" className="section-padding bg-secondary/30">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-4">Comment ça fonctionne</h2>
+            <h2 className="mb-4">Comment ça marche</h2>
             <p className="text-gray-600 text-lg">
-              Découvre comment Plan B transforme tes habitudes de déplacement, une journée à la fois.
+              Découvre comment Plan B s'adapte à tes habitudes pour t'aider à faire les choix les plus malins, au quotidien.
             </p>
           </div>
           
           <div className="space-y-24">
-            {appTourSteps.map((step, index) => <AppFeature key={index} {...step} />)}
+            {appTourSteps.map((step, index) => (
+              <AppFeature key={index} {...step} />
+            ))}
           </div>
         </div>
       </section>
-    </>;
+    </>
+  );
 };
+
 export default FeatureSection;

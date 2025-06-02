@@ -4,7 +4,6 @@ import { Users } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const AboutSection = () => {
-  // Liste des membres de l'équipe
   const teamMembers = [
     { name: 'Alicia', image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c' },
     { name: 'Amine', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158' },
@@ -23,15 +22,21 @@ const AboutSection = () => {
             <h2 className="mb-4">Qui sommes-nous ?</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Une équipe de passionnés</h3>
+                <h3 className="text-xl font-semibold mb-2">• Une équipe de pragmatiques</h3>
                 <p className="text-gray-600">
-                  Nous sommes une équipe d'étudiants en Master Product Management à HETIC, passionnés par la tech et l'écologie, avec une mission : rendre les choix écologiques plus simples et accessibles.
+                  Nous sommes une équipe d'étudiants en Master Product Management à HETIC. Notre mission : créer des solutions concrètes qui s'adaptent à la vraie vie, pas l'inverse.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">• Notre mission ?</h3>
+                <h3 className="text-xl font-semibold mb-2">• Notre approche ?</h3>
                 <p className="text-gray-600">
-                  Apporter des solutions concrètes pour des trajets plus responsables, sans prise de tête. On veut rendre l'écologie compatible avec la vraie vie.
+                  Pas de leçons de morale. Juste des outils intelligents qui t'aident à faire les choix les plus malins pour tes déplacements. L'impact positif, c'est le bonus.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">• Pourquoi Plan B ?</h3>
+                <p className="text-gray-600">
+                  Parce qu'on croit qu'il ne faut pas changer les gens, mais leur donner de meilleurs outils. Plan B, c'est ta voiture + l'intelligence collective des transports.
                 </p>
               </div>
             </div>
@@ -48,7 +53,7 @@ const AboutSection = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-center mb-4">Notre équipe</h3>
                 <p className="text-gray-600 text-center mb-6">
-                  Une équipe diversifiée qui partage une passion commune pour la création d'un avenir plus durable.
+                  Une équipe qui comprend les vrais défis de la mobilité urbaine et conçoit des solutions pratiques.
                 </p>
                 
                 <div className="grid grid-cols-3 gap-4 mt-6">
